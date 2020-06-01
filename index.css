@@ -1,0 +1,23 @@
+.page {
+    min-width: 320px;
+    max-width: 1280px;
+    background: #000;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid #545454;
+    max-width: 882px;
+    height: 74px;
+    margin: 45px auto 0;
+}
+
+.header__logo {
+    display: flex;
+    max-width: 173px;
+    height: 33px;
+    padding: 0;
+    margin: 0 auto 41px 0;
+}
