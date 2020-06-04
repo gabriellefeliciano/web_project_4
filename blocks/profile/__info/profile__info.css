@@ -1,0 +1,10 @@
+.profile__info {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: baseline;
+    width: 428px;
+    height: 77px;
+    margin: 0 154px 0 0;
+    padding: 0;
+}
