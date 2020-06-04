@@ -1,9 +1,37 @@
+  @font-face {
+    font-family: "Inter";
+    font-style:  normal;
+    font-weight: 400;
+    src: url('./Inter_Web/Inter-Regular.woff2') format("woff2");
+    src: url('./Inter_Web/Inter-Regular.woff') format("woff"),
+         url('./Inter_Desktop/Inter-Regular.otf') format("otf");
+  }
+
+  @font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    src: url('./Inter_Web/Inter-Bold.woff2') format("woff2");
+    src: url('./Inter_Web/Inter-Bold.woff') format("woff"),
+         url('./Inter_Desktop/Inter-Bold.otf') format("otf");
+  }
+
+  @font-face {
+       font-family: "Inter";
+       font-style: normal;
+       font-weight: 900;
+       src: url('./Inter_Web/Inter-Black.woff2') format("woff2");
+       src: url('./Inter_Web/Inter-Black.woff') format("woff"),
+          url('./Inter_Desktop/Inter-Black.otf') format("otf");
+  }
+
 .page {
     min-width: 320px;
     max-width: 1280px;
     background: #000;
     margin: 0 auto;
     padding: 0;
+    font-family: "Inter";
 }
 
 .header {
@@ -21,3 +49,64 @@
     padding: 0;
     margin: 0 auto 41px 0;
 }
+
+.profile {
+    display: flex;
+    max-width: 882px;
+    height: 120px;
+    margin: 40px auto 0;
+    align-items: center;
+}
+
+.profile__avatar {
+    border-radius: 100%;
+    max-width: 120px;
+    height: 120px;
+    margin: 0 30px 0 0;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: baseline;
+    width: 428px;
+    height: 77px;
+    margin: 0 154px 0 0;
+    padding: 0;
+}
+
+.profile__text {
+    width: 380px;
+    margin: 0 24px 0 0;
+    padding: 0;
+}
+
+.profile__title {
+    font-size: 42px;
+    line-height: 56px;
+    width: 100%;
+    margin: 0 0 16px 0;
+    padding: 0;
+    color: #fff;
+}
+
+.profile__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 318px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.profile__editButton {
+    max-width: 24px;
+    height: 24px;
+}
+
+.profile__addButton {
+    max-width: 150px;
+    height: 50px;
+}
+
