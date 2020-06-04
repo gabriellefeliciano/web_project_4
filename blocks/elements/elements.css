@@ -1,6 +1,7 @@
 @import url(./__list/elements__list.css);
 
 .elements {
+    display: flex;
     max-width: 882px;
     max-height: 744px;
     margin: 50px auto 0;
