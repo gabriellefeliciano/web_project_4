@@ -7,3 +7,11 @@
     height: 74px;
     margin: 45px auto 0;
 }
+
+@media screen and (max-width: 320px) {
+    .header {
+        width: 100%;
+        height: 56px;
+        margin-top: 28px;
+    }
+}

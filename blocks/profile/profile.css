@@ -13,3 +13,12 @@
     margin: 40px auto 0;
     align-items: center;
 }
+
+@media screen and (max-width: 320px) {
+    .profile {
+        flex-direction: column;
+        max-width: 282px;
+        height: 286px;
+        margin-top: 42px;
+    }
+}

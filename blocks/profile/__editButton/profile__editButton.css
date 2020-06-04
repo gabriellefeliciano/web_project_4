@@ -1,4 +1,13 @@
 .profile__editButton {
     max-width: 24px;
     height: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+    .profile__editButton {
+        max-width: 18px;
+        height: 18px;
+    }
 }

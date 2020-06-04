@@ -1,4 +1,10 @@
 .profile__addButton {
-    max-width: 150px;
+    width: 150px;
     height: 50px;
+}
+
+@media screen and (max-width: 320px) {
+    .profile__addButton {
+        width: 282px;
+    }
 }

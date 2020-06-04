@@ -5,3 +5,11 @@
     padding: 0;
     margin: 0 auto 41px 0;
 }
+
+@media screen and (max-width: 320px) {
+    .header__logo {
+        max-width: 126px;
+        height: 24px;
+        margin: 0 auto 32px 27px;
+    }
+}
