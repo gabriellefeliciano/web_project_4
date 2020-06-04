@@ -1,3 +1,11 @@
+@import url(./__title/profile__title.css);
+@import url(./__text/profile__text.css);
+@import url(./__subtitle/profile__subtitle.css);
+@import url(./__info/profile__info.css);
+@import url(./__editButton/profile__editButton.css);
+@import url(./__avatar/profile__avatar.css);
+@import url(./__addButton/profile__addButton.css);
+
 .profile {
     display: flex;
     max-width: 882px;

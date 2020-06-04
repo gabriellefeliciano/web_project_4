@@ -1,3 +1,5 @@
+@import url(./__list/elements__list.css);
+
 .elements {
     width: 882px;
     max-height: 744px;
