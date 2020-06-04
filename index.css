@@ -164,3 +164,15 @@
     margin: 0 15px 15px 0;
     padding: 0;
 }
+
+.footer {
+    max-width: 883px;
+    height: 18px;
+    margin: 66px auto 60px;
+}
+
+.footer__copyright {
+    font-size: 18px;
+    line-height: 22px;
+    color: #545454;
+}
