@@ -52,17 +52,10 @@
 
 .profile {
     display: flex;
-<<<<<<< HEAD
-    border: 1px solid pink;
-    max-width: 882px;
-    height: 120px;
-    margin: 40px auto 0;
-=======
     max-width: 882px;
     height: 120px;
     margin: 40px auto 0;
     align-items: center;
->>>>>>> feature/profile
 }
 
 .profile__avatar {
@@ -73,13 +66,6 @@
 }
 
 .profile__info {
-<<<<<<< HEAD
-    max-width: 428px;
-    height: 77px;
-}
-
-.profile__title {
-=======
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -102,31 +88,19 @@
     width: 100%;
     margin: 0 0 16px 0;
     padding: 0;
->>>>>>> feature/profile
     color: #fff;
 }
 
 .profile__subtitle {
-<<<<<<< HEAD
-=======
     font-size: 18px;
     line-height: 22px;
     max-width: 318px;
     margin: 0;
     padding: 0;
->>>>>>> feature/profile
     color: #fff;
 }
 
 .profile__editButton {
-<<<<<<< HEAD
-
-}
-
-.profile__submitButton {
-
-}
-=======
     max-width: 24px;
     height: 24px;
 }
@@ -136,4 +110,57 @@
     height: 50px;
 }
 
->>>>>>> feature/profile
+.elements {
+    width: 882px;
+    max-height: 744px;
+    margin: 50px auto 0;
+    padding: 0;
+}
+
+.elements__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 18px;
+    row-gap: 21px;
+    margin: 0;
+    padding: 0;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 282px;
+    height: 361px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.element__image {
+    width: 282px;
+    height: 282px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.element__card {
+    align-self: center;
+}
+
+.element__title {
+    width: 193px;
+    margin: 0 25px 15px 21px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.element__likeButton {
+    width: 20.76px;
+    height: 18.13px;
+    margin: 0 15px 15px 0;
+    padding: 0;
+}
