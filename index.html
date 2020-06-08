@@ -60,5 +60,17 @@
     <section class="footer">
         <p class="footer__copyright">&copy; 2020 Around The U.S.</p>
     </section>
+    <section class="popup">
+        <img src="images/closeicon_regular.png" class="popup__close-button" alt="Close Button">
+        <form class="popup__container popup__opened" action="/action_page.php" method="get">
+        <h3 class="popup__title">Edit profile</h3>
+        <label class="popup__label" for="fname">Name</label>
+        <input class="popup__field" type="text" id="fname" name="fname">
+        <label class="popup__label" for="lname">About Me</label>
+        <input class="popup__field" type="text" id="lname" name="lname">
+        <input class="popup__submit-button">
+      </form>
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>

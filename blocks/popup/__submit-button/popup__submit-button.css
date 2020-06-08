@@ -1,0 +1,8 @@
+.popup__submit-button {
+    min-width: 358px;
+    min-height: 50.15px;
+    margin: 18px auto 36.51px;
+    background-image: url(../../../images/submitbutton_regular.png);
+    padding: 0;
+    border: none;
+}
