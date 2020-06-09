@@ -1,8 +1,11 @@
 .popup__field {
     opacity: 0.2;
     width: 358px;
-    height: 0;
+    max-height: 27.3px;
     border-style: none;
     border-bottom: 1px solid #000000;
-    margin: 13.3px auto 29.74px;
+    margin: 0 auto 29.74px;
+    font-size: 14px;
+    line-height: 17px;
+    padding-bottom: 13.26px;
 }

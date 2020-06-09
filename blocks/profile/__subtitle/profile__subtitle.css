@@ -2,7 +2,7 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: normal;
-    max-width: 318px;
+    width: 318px;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -10,6 +10,7 @@
 
 @media screen and (max-width: 320px) {
     .profile__subtitle {
+        max-width: 280px;
         font-size: 14px;
         line-height: 17px;
     }

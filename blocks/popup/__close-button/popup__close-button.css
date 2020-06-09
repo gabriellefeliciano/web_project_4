@@ -1,7 +1,13 @@
 .popup__close-button {
-    max-width: 40.7px;
-    max-height: 40.7px;
-    margin-left: 843px;
+    display: flex;
+    width: 40.7px;
+    height: 40.7px;
+    margin-left: 448.7px;
     margin-top: 148px;
     padding: 0;
+    background-image: url(../../../images/closeicon_regular.png);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
 }

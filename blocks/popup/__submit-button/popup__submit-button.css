@@ -2,11 +2,18 @@
     min-width: 358px;
     min-height: 50.15px;
     margin: 18px auto 36.51px;
-    background-image: url(../../../images/submitbutton_regular.png);
     padding: 0;
     border: none;
+    background-image: url(../../../images/submitbutton_regular.png);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    align-self: center;
 }
 
 .popup__submit-button:hover {
     background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }

@@ -2,8 +2,9 @@
     font-size: 42px;
     line-height: 56px;
     font-weight: 500;
-    width: 100%;
-    margin: 0 0 16px 0;
+    width: 380px;
+    max-height: 43px;
+    margin: 0 24px 16px 0;
     padding: 0;
     color: #fff;
 }
@@ -15,5 +16,7 @@
         font-size: 22px;
         line-height: 56px;
         margin-bottom: 14px;
+        margin-right: 12px;
+        margin-left: 40px;
     }
 }

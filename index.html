@@ -12,16 +12,12 @@
     </header>
     <section class="profile">
         <img src="images/profile__jacques.jpg" class="profile__avatar" alt="Circular portrait of Jacques Cousteau">
-        <ul class="profile__info">
-            <li class="profile__text">
-                <h1 class="profile__title">Jacques Cousteau</h1>
-                <p class="profile__subtitle">Explorer</p>
-            </li>
-            <li class="profile__buttons">
-                <img src="images/editbutton_regular.png" class="profile__edit-button" alt="Edit Button">
-            </li>
-        </ul>
-        <img src="images/profile__addButton.png" class="profile__add-button" alt="Add Button">
+        <div class="profile__info">
+            <h1 class="profile__title">Jacques Cousteau</h1>
+            <button class="profile__edit-button" alt="Edit Button"></button>
+            <p class="profile__subtitle">Explorer</p>
+        </div>
+        <button src="images/profile__addButton.png" class="profile__add-button" alt="Add Button"></button>
     </section>
     <section class="elements">
         <ul class="elements__list">
@@ -61,15 +57,15 @@
         <p class="footer__copyright">&copy; 2020 Around The U.S.</p>
     </section>
     <section class="popup">
-        <img src="images/closeicon_regular.png" class="popup__close-button" alt="Close Button">
-        <form class="popup__container" action="#">
-        <h3 class="popup__title">Edit profile</h3>
-        <label class="popup__label" for="fullName">Full Name</label>
-        <input class="popup__field popup__full-name" type="text" id="fullName" name="fullName">
-        <label class="popup__label" for="aboutMe">About Me</label>
-        <input class="popup__field popup__about-me" type="text" id="aboutMe" name="aboutMe">
-        <input class="popup__submit-button" type="submit">
-      </form>
+        <div class="popup__container">
+            <button class="popup__close-button" alt="Close Button"></button>
+            <form class="popup__form" action="#">
+                <h3 class="popup__title">Edit profile</h3>
+                <input class="popup__field popup__full-name" type="text" value="Full Name">
+                <input class="popup__field popup__about-me" type="text" value="About Me">
+                <button class="popup__submit-button" type="submit">
+            </form>
+        </div>
     </section>
     <script src="./pages/index.js"></script>
 </body>
