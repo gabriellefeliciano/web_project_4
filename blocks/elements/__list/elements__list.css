@@ -8,17 +8,17 @@
     padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .elements__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 320px) {
     .elements__list {
         max-width: 282px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
         row-gap: 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .elements__list {
-        grid-template-columns: repeat(2, 1fr);
     }
 }

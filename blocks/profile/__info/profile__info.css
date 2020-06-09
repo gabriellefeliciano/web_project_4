@@ -9,18 +9,18 @@
     padding: 0;
 }
 
+@media screen and (max-width: 768px) {
+    .profile__info {
+        max-width: 75%;
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .profile__info {
         max-width: 280px;
         height: 66px;
         margin: 14px 0 36px 0;
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .profile__info {
-        width: 75%;
-        margin-right: 0;
     }
 }

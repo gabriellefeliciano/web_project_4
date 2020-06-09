@@ -3,3 +3,9 @@
     height: 377px;
     margin: auto;
 }
+
+@media screen and (max-width: 320px) {
+    .popup__container {
+        max-width: 85%;
+    }
+}

@@ -10,3 +10,9 @@
     padding-bottom: 13.26px;
     color: #000;
 }
+
+@media screen and (max-width: 320px) {
+    .popup__field {
+        width: 85%;
+    }
+}

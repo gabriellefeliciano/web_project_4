@@ -9,6 +9,14 @@
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+    .profile__title {
+        width: 69%;
+        margin-right: 0;
+        font-size: 32px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .profile__title {
         max-width: 201px;
@@ -18,13 +26,5 @@
         margin-bottom: 14px;
         margin-right: 12px;
         margin-left: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .profile__title {
-        width: 69%;
-        margin-right: 0;
-        font-size: 32px;
     }
 }

@@ -11,3 +11,9 @@
     background-repeat: no-repeat;
     border: none;
 }
+
+@media screen and (max-width: 320px) {
+    .popup__close-button {
+        margin-left: 90%;
+    }
+}
