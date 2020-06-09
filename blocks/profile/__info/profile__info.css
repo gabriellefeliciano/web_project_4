@@ -17,3 +17,10 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .profile__info {
+        width: 75%;
+        margin-right: 0;
+    }
+}

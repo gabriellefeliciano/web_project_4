@@ -21,3 +21,12 @@
         margin-top: 42px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-wrap: wrap;
+        width: 75%;
+        height: 204px;
+        justify-content: center;
+    }
+}
