@@ -18,42 +18,42 @@
                 <p class="profile__subtitle">Explorer</p>
             </li>
             <li class="profile__buttons">
-                <img src="images/editbutton_regular.png" class="profile__editButton" alt="Edit Button">
+                <img src="images/editbutton_regular.png" class="profile__edit-button" alt="Edit Button">
             </li>
         </ul>
-        <img src="images/profile__addButton.png" class="profile__addButton" alt="Add Button">
+        <img src="images/profile__addButton.png" class="profile__add-button" alt="Add Button">
     </section>
     <section class="elements">
         <ul class="elements__list">
             <li class="element">
                 <img src="images/elements_yosemite.jpg" class="element__image" alt="Image of Yosemite Valley with a wide river in focus surrounded by tall trees and a mountain in the background">
                 <h2 class="element__card element__title">Yosemite Valley</h2>
-                <img src="images/element__likeButton.svg" class="element__card element__likeButton">
+                <img src="images/element__likeButton.svg" class="element__card element__like-button">
             </li>
             <li class="element">
                 <img src="images/elements_lakelouise.jpg" class="element__image" alt="Image of Lake Louise with mountain peaks on either side and a clear blue sky in the background">
                 <h2 class="element__card element__title">Lake Louise</h2>
-                <img src="images/element__likeButton.svg" class="element__card element__likeButton">
+                <img src="images/element__likeButton.svg" class="element__card element__like-button">
             </li>
             <li class="element">
                 <img src="images/elements_baldmountain.jpg" class="element__image" alt="Image of Bald Mountains with a beautifully orange sunset and a range of dark mountains sloping into the horizon">
                 <h2 class="element__card element__title">Bald Mountains</h2>
-                <img src="images/element__likeButton.svg" class="element__card element__likeButton">
+                <img src="images/element__likeButton.svg" class="element__card element__like-button">
             </li>
             <li class="element">
                 <img src="images/elements_latemar.png" class="element__image" alt="Image of Latemar at night with a sky dotted by millions of stars and a mountain range dusted with snow"> 
                 <h2 class="element__card element__title">Latemar</h2>
-                <img src="images/element__likeButton.svg" class="element__card element__likeButton">
+                <img src="images/element__likeButton.svg" class="element__card element__like-button">
             </li>
             <li class="element">
                 <img src="images/elements_vanoisnational.jpg" class="element__image" alt="Image of Vanois National Park featuring a clear blue sky with a single whispy cloud and a range of mountains with a lake reflecting the rising sun">
                 <h2 class="element__card element__title">Vanois National...</h2>
-                <img src="images/element__likeButton.svg" class="element__card element__likeButton">
+                <img src="images/element__likeButton.svg" class="element__card element__like-button">
             </li>
             <li class="element">
                 <img src="images/elements_lagodebraies.jpg" class="element__image" alt="Image of Lago di Braies with a tall mountain sliced by a winding road and row boats docked at a nearby platform">
                 <h2 class="element__card element__title">Lago di Braies</h2>
-                <img src="images/element__likeButton.svg" class="element__card element__likeButton">
+                <img src="images/element__likeButton.svg" class="element__card element__like-button">
             </li>
         </ul>
     </section>
@@ -62,15 +62,15 @@
     </section>
     <section class="popup">
         <img src="images/closeicon_regular.png" class="popup__close-button" alt="Close Button">
-        <form class="popup__container popup__opened" action="/action_page.php" method="get">
+        <form class="popup__container" action="#">
         <h3 class="popup__title">Edit profile</h3>
-        <label class="popup__label" for="fname">Name</label>
-        <input class="popup__field" type="text" id="fname" name="fname">
-        <label class="popup__label" for="lname">About Me</label>
-        <input class="popup__field" type="text" id="lname" name="lname">
-        <input class="popup__submit-button">
+        <label class="popup__label" for="fullName">Full Name</label>
+        <input class="popup__field popup__full-name" type="text" id="fullName" name="fullName">
+        <label class="popup__label" for="aboutMe">About Me</label>
+        <input class="popup__field popup__about-me" type="text" id="aboutMe" name="aboutMe">
+        <input class="popup__submit-button" type="submit">
       </form>
     </section>
-    <script src="index.js"></script>
+    <script src="./pages/index.js"></script>
 </body>
 </html>
