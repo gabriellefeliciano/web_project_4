@@ -20,6 +20,8 @@ function formSubmitHandler (evt) {
 
     profileName.textContent = fullName.value;
     profileAbout.textContent = aboutMe.value;
+
+    togglePopup();
 }
 
-formElement.addEventListener('submit', formSubmitHandler);
+editForm.addEventListener('submit', formSubmitHandler);
