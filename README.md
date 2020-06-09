@@ -1,5 +1,7 @@
 # Project 4: Around The U.S.
 
+* [Link to my project in GitHub] (https://gabriellefeliciano.github.io/web_project_4/)
+
 ### Overview
 
 * Figma
