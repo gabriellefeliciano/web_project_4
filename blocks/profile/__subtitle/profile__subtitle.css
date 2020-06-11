@@ -2,7 +2,8 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: normal;
-    width: 318px;
+    max-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     color: #fff;

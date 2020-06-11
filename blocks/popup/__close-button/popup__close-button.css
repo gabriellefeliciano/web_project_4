@@ -1,9 +1,8 @@
 .popup__close-button {
-    display: flex;
+    position: relative;
     width: 40.7px;
     height: 40.7px;
-    margin-left: 448.7px;
-    margin-top: 148px;
+    margin-left: 450px;
     padding: 0;
     background-image: url(../../../images/closeicon_regular.png);
     background-color: transparent;
