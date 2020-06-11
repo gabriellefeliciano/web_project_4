@@ -15,8 +15,8 @@ closeButton.addEventListener("click", togglePopup);
 function formSubmitHandler (evt) {
     evt.preventDefault();
 
-    let fullName = document.querySelector('.popup__full-name');
-    let aboutMe = document.querySelector('.popup__about-me');
+    let fullName = document.querySelector('.popup__field_full-name');
+    let aboutMe = document.querySelector('.popup__field_about-me');
 
     profileName.textContent = fullName.value;
     profileAbout.textContent = aboutMe.value;

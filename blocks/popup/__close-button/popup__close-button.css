@@ -6,10 +6,14 @@
     margin-top: 148px;
     padding: 0;
     background-image: url(../../../images/closeicon_regular.png);
-    background-color: black;
+    background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
     border: none;
+}
+
+.popup__close-button:hover {
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 320px) {
