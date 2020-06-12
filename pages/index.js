@@ -11,6 +11,15 @@ function togglePopup () {
     popup.classList.toggle('popup_opened');
 }
 
+editForm.addEventListener('click', () => {
+    evt.preventDefault();
+
+    fullName.value = profileName.textContent;
+    aboutMe.value = profileAbout.textContent;
+
+    togglePopup();
+});
+
 editButton.addEventListener("click", togglePopup);
 closeButton.addEventListener("click", togglePopup);
 

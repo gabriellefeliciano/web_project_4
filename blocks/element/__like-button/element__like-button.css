@@ -11,3 +11,8 @@
     border: none;
     background-color: white;
 }
+
+.element__like-button:hover {
+    opacity: 0.25;
+    cursor: pointer;
+}

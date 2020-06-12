@@ -4,22 +4,34 @@
     flex-wrap: wrap;
     align-items: baseline;
     width: 428px;
-    height: 77px;
+    max-height: 100%;
     margin: 0 154px 0 0;
     padding: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    .profile__info {
+        max-width: 50%;
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .profile__info {
-        max-width: 75%;
         margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .profile__info {
+        max-width: 100%;
+        margin-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .profile__info {
         max-width: 280px;
-        height: 66px;
         margin: 14px 0 36px 0;
         text-align: center;
     }

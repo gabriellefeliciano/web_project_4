@@ -8,9 +8,23 @@
     padding: 0;
 }
 
+@media screen and (max-width: 1024px) {
+    .elements__list {
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .elements__list {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .elements__list {
+        grid-template-columns: 1fr;
+        margin: auto;
     }
 }
 

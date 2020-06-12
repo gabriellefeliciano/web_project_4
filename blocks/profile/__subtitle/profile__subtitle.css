@@ -3,15 +3,33 @@
     line-height: 22px;
     font-weight: normal;
     max-width: 100%;
+    max-height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .profile__subtitle {
+        width: 69%;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .profile__subtitle {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .profile__subtitle {
-        max-width: 280px;
+        max-width: 201px;
         font-size: 14px;
         line-height: 17px;
     }

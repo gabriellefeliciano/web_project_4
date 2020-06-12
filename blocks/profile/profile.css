@@ -13,11 +13,24 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+    .profile {
+        max-width: 75%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .profile {
         width: 75%;
         height: 204px;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 733px) {
+    .profile {
+        flex-direction: column;
+        height: auto;
     }
 }
 
