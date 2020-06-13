@@ -8,17 +8,11 @@ const fullName = document.querySelector('.popup__field_type_full-name');
 const aboutMe = document.querySelector('.popup__field_type_about-me');
 
 function togglePopup () {
-    popup.classList.toggle('popup_opened');
-}
-
-editForm.addEventListener('click', () => {
-    evt.preventDefault();
-
     fullName.value = profileName.textContent;
     aboutMe.value = profileAbout.textContent;
-
-    togglePopup();
-});
+    
+    popup.classList.toggle('popup_opened');
+}
 
 editButton.addEventListener("click", togglePopup);
 closeButton.addEventListener("click", togglePopup);
