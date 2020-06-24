@@ -4,6 +4,19 @@ const profileAbout = document.querySelector('.profile__subtitle');
 const fullName = document.querySelector('.popup__field_type_full-name');
 const aboutMe = document.querySelector('.popup__field_type_about-me');
 
+//Popup Wrappers
+const editProfilePopup = document.querySelector('.popup__type_edit-profile');
+const addCardPopup = document.querySelector('.popup__type_add-card');
+const imagePopup = document.querySelector('.popup__type_image');
+const editForm = document.querySelector('.popup__container');
+
+//Buttons
+const editButton = document.querySelector('.profile__edit-button');
+const addButton = document.querySelector('.profile__add-button');
+const editProfileCloseButton = editProfilePopup.querySelector('.popup__close-button');
+const addCardCloseButton = addCardPopup.querySelector('.popup__close-button');
+const imageCloseButton = imagePopup.querySelector('.popup__close-button');
+
 //Add Card Popup
 const initialCards = [
     {
@@ -33,11 +46,9 @@ const initialCards = [
 ];
 
 const cardTemplate = document.querySelector('.card-template').content.querySelector('.element');
-const cardForm = document.querySelector('.popup__type_add-card')
-
-function toggleLikeButton (likeButton) {
-    likeButton.classList.toggle('.element__like-button_clicked');
-};
+const cardForm = document.querySelector('.popup__type_add-card');
+const image = document.querySelector('.popup__image');
+const caption = document.querySelector('.popup__caption');
 
 const createCard = (data) => {
     const cardElement = cardTemplate.cloneNode(true);
@@ -78,24 +89,6 @@ const renderCard = (data) => {
 initialCards.forEach((data) => {
     renderCard(data);
 })
-
-//Image Popup
-const image = document.querySelector('.popup__image');
-const caption = document.querySelector('.popup__caption');
-
-
-//Popup Wrappers
-const editProfilePopup = document.querySelector('.popup__type_edit-profile');
-const addCardPopup = document.querySelector('.popup__type_add-card');
-const imagePopup = document.querySelector('.popup__type_image');
-const editForm = document.querySelector('.popup__container');
-
-//Buttons
-const editButton = document.querySelector('.profile__edit-button');
-const addButton = document.querySelector('.profile__add-button');
-const editProfileCloseButton = editProfilePopup.querySelector('.popup__close-button');
-const addCardCloseButton = addCardPopup.querySelector('.popup__close-button');
-const imageCloseButton = imagePopup.querySelector('.popup__close-button');
 
 //Functions
 function togglePopup (popup) {
