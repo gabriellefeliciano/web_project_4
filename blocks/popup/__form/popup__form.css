@@ -7,3 +7,12 @@
     margin: 0 auto;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 320px) {
+    .popup__form {
+        max-width: 240px;
+        max-height: 258px;
+        margin: 0;
+    }
+}
+
