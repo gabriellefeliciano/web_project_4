@@ -12,6 +12,7 @@
 @import url(./__create-button/popup__create-button.css);
 
 .popup {
+    display: flex;
     position: fixed;
     justify-content: center;
     top: 0;

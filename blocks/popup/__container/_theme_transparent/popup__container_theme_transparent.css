@@ -5,9 +5,8 @@
     justify-self: center;
     left: 0;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background: transparent;
     padding: 0;
-    margin-top: 41px;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
 }

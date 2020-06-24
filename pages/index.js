@@ -51,9 +51,9 @@ const createCard = (data) => {
     cardTitle.textContent = data.name;
     cardImage.style.backgroundImage = `url(${data.link})`;
 
-    cardLikeButton.addEventListener('click', (evt) => {
-        toggleLikeButton(cardLikeButton);
-    });
+    cardLikeButton.addEventListener('click', () => {
+        cardLikeButton.classList.toggle("element__like-button_clicked");
+    })
 
     cardRemoveButton.addEventListener('click', (evt) => {
         evt.target.closest('.element').remove();
