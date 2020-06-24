@@ -22,36 +22,6 @@
         </section>
         <section class="elements">
             <ul class="elements__list">
-                <li class="element">
-                    <img src="images/elements_yosemite.jpg" class="element__image" alt="Image of Yosemite Valley with a wide river in focus surrounded by tall trees and a mountain in the background">
-                    <h2 class="element__title">Yosemite Valley</h2>
-                    <button class="element__like-button"></button>
-                </li>
-                <li class="element">
-                    <img src="images/elements_lakelouise.jpg" class="element__image" alt="Image of Lake Louise with mountain peaks on either side and a clear blue sky in the background">
-                    <h2 class="element__title">Lake Louise</h2>
-                    <button class="element__like-button"></button>
-                </li>
-                <li class="element">
-                    <img src="images/elements_baldmountain.jpg" class="element__image" alt="Image of Bald Mountains with a beautifully orange sunset and a range of dark mountains sloping into the horizon">
-                    <h2 class="element__title">Bald Mountains</h2>
-                    <button class="element__like-button"></button>
-                </li>
-                <li class="element">
-                    <img src="images/elements_latemar.png" class="element__image" alt="Image of Latemar at night with a sky dotted by millions of stars and a mountain range dusted with snow"> 
-                    <h2 class="element__title">Latemar</h2>
-                    <button class="element__like-button"></button>
-                </li>
-                <li class="element">
-                    <img src="images/elements_vanoisnational.jpg" class="element__image" alt="Image of Vanois National Park featuring a clear blue sky with a single whispy cloud and a range of mountains with a lake reflecting the rising sun">
-                    <h2 class="element__title">Vanois National Park</h2>
-                    <button class="element__like-button"></button>
-                </li>
-                <li class="element">
-                    <img src="images/elements_lagodebraies.jpg" class="element__image" alt="Image of Lago di Braies with a tall mountain sliced by a winding road and row boats docked at a nearby platform">
-                    <h2 class="element__title">Lago di Braies</h2>
-                    <button class="element__like-button"></button>
-                </li>
             </ul>
         </section>
     </main>
@@ -61,7 +31,7 @@
         <section class="popup popup__type_edit-profile">
             <div class="popup__container">
                 <button class="popup__close-button"></button>
-                <form class="popup__form" action="#">
+                <form class="popup__form">
                     <h3 class="popup__title">Edit profile</h3>
                     <input class="popup__field popup__field_type_full-name" type="text" value="Full Name">
                     <input class="popup__field popup__field_type_about-me" type="text" value="About Me">
@@ -69,6 +39,38 @@
                 </form>
             </div>
         </section>
+
+        <section class="popup popup__type_add-card">
+            <div class="popup__container">
+              <button class="popup__close-button"></button>
+              <form class="popup__form">
+                <h3 class="popup__title">New Place</h3>
+                <input class="popup__field popup__field_type_title" type="text" placeholder="Title">
+                <input class="popup__field popup__field_type_image-link" type="url" placeholder="Image URL">
+                <button class="popup__create-button" type="submit"></button>
+              </form>
+            </div>
+        </section>
+
+        <section class="popup popup__type_image">
+            <div class="popup__container popup__container_theme_transparent">
+                <button class="popup__close-button popup__close-button_image"></button>
+                <figure class="popup__figure">
+                    <img class="popup__image" src="" alt="">
+                    <figcaption class="popup__caption"></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <template class="card-template">
+            <li class="element">
+                <button class="element__remove-button"></button>
+                <div class="element__image"></div>
+                <h2 class="element__title"></h2>
+                <button class="element__like-button"></button>
+            </li>
+        </template>
+
     <script src="./pages/index.js"></script>
 </body>
 </html>
