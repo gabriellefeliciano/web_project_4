@@ -60,7 +60,6 @@ const createCard = (data) => {
     const cardImage = cardElement.querySelector('.element__image');
     const cardLikeButton = cardElement.querySelector('.element__like-button');
     const cardRemoveButton = cardElement.querySelector('.element__remove-button');
-    const cardImageCloseButton = cardElement.querySelector('.popup__close-button');
 
     cardTitle.textContent = data.name;
     cardImage.style.backgroundImage = `url(${data.link})`;
@@ -111,10 +110,6 @@ addButton.addEventListener('click', () => {
 
 addCardCloseButton.addEventListener('click', () => {
     togglePopup(addCardPopup);
-});
-
-imageCloseButton.addEventListener('click', () => {
-    togglePopup(imagePopup);
 });
 
 function formSubmitHandler (evt) {
