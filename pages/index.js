@@ -15,7 +15,6 @@ const editButton = document.querySelector('.profile__edit-button');
 const addButton = document.querySelector('.profile__add-button');
 const editProfileCloseButton = editProfilePopup.querySelector('.popup__close-button');
 const addCardCloseButton = addCardPopup.querySelector('.popup__close-button');
-const imageCloseButton = imagePopup.querySelector('.popup__close-button');
 
 //Add Card Popup
 const initialCards = [
@@ -49,6 +48,10 @@ const cardTemplate = document.querySelector('.card-template').content.querySelec
 const cardForm = document.querySelector('.popup__type_add-card');
 const image = document.querySelector('.popup__image');
 const caption = document.querySelector('.popup__caption');
+
+function togglePopup (popup) {
+    popup.classList.toggle('popup_opened');
+};
 
 const createCard = (data) => {
     const cardElement = cardTemplate.cloneNode(true);
@@ -91,10 +94,6 @@ initialCards.forEach((data) => {
 })
 
 //Functions
-function togglePopup (popup) {
-    popup.classList.toggle('popup_opened');
-};
-
 editButton.addEventListener('click', () => {
     fullName.value = profileName.textContent;
     aboutMe.value = profileAbout.textContent;
