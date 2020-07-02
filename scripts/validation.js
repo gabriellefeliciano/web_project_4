@@ -1,4 +1,4 @@
-function showErrorMessage(input, form, {errorClass, inputErrorClass, ...rest}) {
+function showErrorMessage(input, errorClass, inputErrorClass) {
     const error = document.querySelector("#" + input.id + "-error");
     error.textContent = input.validationMessage;
 
@@ -6,7 +6,8 @@ function showErrorMessage(input, form, {errorClass, inputErrorClass, ...rest}) {
     input.classList.add(inputErrorClass);
 }
 
-function hideErrorMessage(input, form, {errorClass, inputErrorClass, ...rest}) {
+
+function hideErrorMessage(input, errorClass, inputErrorClass) {
     const error = document.querySelector("#" + input.id + "-error");
     error.textContent = "";
 
@@ -22,7 +23,7 @@ function checkInputValidity(input, form, rest) {
     }
 }
 
-function toggleButtonState(inputs, button, {inactiveButtonClass, ...rest}) {
+function toggleButtonState(inputs, button, inactiveButtonClass) {
     const isValid = inputs.every((input) => input.validity.valid);
 
     if(isValid) {
@@ -32,7 +33,7 @@ function toggleButtonState(inputs, button, {inactiveButtonClass, ...rest}) {
     }
 }
 
-function enableValidation({formSelector, inputSelector, submitButtonSelector, ...rest}) {
+function enableValidation(formSelector, inputSelector, submitButtonSelector) {
     const forms = [...document.querySelectorAll(formSelector)];
 
     forms.forEach((form) => {
@@ -41,7 +42,7 @@ function enableValidation({formSelector, inputSelector, submitButtonSelector, ..
         }));
 
         const inputs = [...form.querySelectorAll(inputSelector)];
-        const button = [...form.querySelector(submitButtonSelector)];
+        const button = form.querySelector(submitButtonSelector);
 
         inputs.forEach((input) => {
             input.addEventListener("input", () => {

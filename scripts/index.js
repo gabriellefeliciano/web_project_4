@@ -98,6 +98,7 @@ editButton.addEventListener('click', () => {
     aboutMe.value = profileAbout.textContent;
     
     togglePopup(editProfilePopup);
+    document.addEventListener('keydown', closePopupWithEscape);
 });
 
 editProfileCloseButton.addEventListener('click', () => {
@@ -106,11 +107,20 @@ editProfileCloseButton.addEventListener('click', () => {
 
 addButton.addEventListener('click', () => {
     togglePopup(addCardPopup);
+    document.addEventListener('keydown', closePopupWithEscape);
 });
 
 addCardCloseButton.addEventListener('click', () => {
     togglePopup(addCardPopup);
 });
+
+function closePopupWithEscape(evt) {
+    const ESC_KEY = 27;
+    if (evt.which === ESC_KEY) {
+      togglePopup(document.querySelector('.popup_opened'));
+      document.removeEventListener('keydown', closePopupWithEscape);
+    }
+}
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
@@ -137,3 +147,13 @@ function submitCardForm (evt) {
 }
 
 cardForm.addEventListener('submit', submitCardForm);
+
+window.addEventListener('click', (evt) => {
+    if (evt.target == editProfilePopup) {
+      togglePopup(editProfilePopup);
+    } else if (evt.target == addCardPopup) {
+      togglePopup(addCardPopup);
+    } else if (evt.target == imagePopup) {
+      togglePopup (imagePopup);
+    }
+});
