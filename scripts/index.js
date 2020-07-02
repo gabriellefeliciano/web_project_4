@@ -98,7 +98,7 @@ editButton.addEventListener('click', () => {
     aboutMe.value = profileAbout.textContent;
     
     togglePopup(editProfilePopup);
-    document.addEventListener('keydown', closePopupWithEscape);
+    document.addEventListener('keydown', escapePopup);
 });
 
 editProfileCloseButton.addEventListener('click', () => {
@@ -107,18 +107,18 @@ editProfileCloseButton.addEventListener('click', () => {
 
 addButton.addEventListener('click', () => {
     togglePopup(addCardPopup);
-    document.addEventListener('keydown', closePopupWithEscape);
+    document.addEventListener('keydown', escapePopup);
 });
 
 addCardCloseButton.addEventListener('click', () => {
     togglePopup(addCardPopup);
 });
 
-function closePopupWithEscape(evt) {
-    const ESC_KEY = 27;
-    if (evt.which === ESC_KEY) {
+function escapePopup(evt) {
+    const escapeKEY = 27;
+    if (evt.which === escapeKEY) {
       togglePopup(document.querySelector('.popup_opened'));
-      document.removeEventListener('keydown', closePopupWithEscape);
+      document.removeEventListener('keydown', escapePopup);
     }
 }
 
