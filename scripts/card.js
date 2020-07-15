@@ -42,8 +42,9 @@ class Card {
             cardLikeButton.classList.toggle("element__like-button_clicked");
         })
     
-        cardRemoveButton.addEventListener('click', (evt) => {
-            evt.target.closest('.element').remove();
+        cardRemoveButton.addEventListener('click', () => {
+            this._card.remove();
+            this._card === "";
         })
 
         cardImage.addEventListener('click',() => {

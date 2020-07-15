@@ -144,11 +144,11 @@ function submitCardForm (evt) {
 cardForm.addEventListener('submit', submitCardForm);
 
 window.addEventListener('click', (evt) => {
-    if (evt.target == editProfilePopup) {
+    if (evt.target === editProfilePopup) {
       togglePopup(editProfilePopup);
-    } else if (evt.target == addCardPopup) {
+    } else if (evt.target === addCardPopup) {
       togglePopup(addCardPopup);
-    } else if (evt.target == imagePopup) {
+    } else if (evt.target === imagePopup) {
       togglePopup (imagePopup);
     }
 });
