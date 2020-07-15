@@ -1,4 +1,4 @@
-function showErrorMessage(input, errorClass, inputErrorClass) {
+/* function showErrorMessage(input, errorClass, inputErrorClass) {
     const error = document.querySelector("#" + input.id + "-error");
     error.textContent = input.validationMessage;
 
@@ -60,4 +60,4 @@ enableValidation({
     inactiveButtonClass: "popup__button_disabled",
     inputErrorClass: "popup__field_type_error",
     errorClass: "popup__error_visible"
-});
+}); */
