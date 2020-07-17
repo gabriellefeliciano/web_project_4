@@ -44,7 +44,7 @@ class Card {
     
         cardRemoveButton.addEventListener('click', () => {
             this._card.remove();
-            this._card === null;
+            this._card = null;
         })
 
         cardImage.addEventListener('click',() => {
