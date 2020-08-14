@@ -49,10 +49,10 @@
               <button name="Close" class="popup__close-button"></button>
               <form class="popup__form">
                 <h3 class="popup__title">New Place</h3>
-                <input id="card-title" class="popup__field popup__field_type_title" type="text" placeholder="Title" minlength="1" maxlength="30" required>
+                <input id="card-title" class="popup__field popup__field_type_title" type="text" placeholder="Title" minlength="1" maxlength="30" name="name" required>
                 <span id="card-title-error" class="popup__error"></span>
 
-                <input id="card-link" class="popup__field popup__field_type_image-link" type="url" placeholder="Image URL" required>
+                <input id="card-link" class="popup__field popup__field_type_image-link" type="url" placeholder="Image URL" name="link" required>
                 <span id="card-link-error" class="popup__error"></span>
 
                 <button name="Submit" class="popup__button" type="submit"></button>
@@ -73,7 +73,7 @@
         <template class="card-template">
             <li class="element">
                 <button name="Remove" class="element__remove-button"></button>
-                <div class="element__image"></div>
+                <div class="element__image" src="#" alt="#"></div>
                 <h2 class="element__title"></h2>
                 <button name="Like" class="element__like-button"></button>
             </li>

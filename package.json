@@ -1,0 +1,26 @@
+{
+  "name": "web_project_4",
+  "version": "1.0.0",
+  "description": "Web Dev Project bundling HTML, CSS, Javascript with Webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriellefeliciano/web_project_4.git"
+  },
+  "author": "Gabrielle Feliciano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriellefeliciano/web_project_4/issues"
+  },
+  "homepage": "https://github.com/gabriellefeliciano/web_project_4#readme",
+  "keywords": [],
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
