@@ -47,7 +47,7 @@ export default class Card {
         }
     }
 
-    createCard = () => {
+    createCard() {
         const element = this._getCardTemplate();
         this._card = element;
 
