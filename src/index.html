@@ -11,11 +11,16 @@
     </header>
     <main class="content">    
         <section class="profile">
-            <div class="profile__avatar"></div>
+            <div class="profile__avatar">
+                <img src="images/profile__jacques.jpg" alt="avatar" class="avatar">
+                <div class="profile__avatar_overlay">
+                    <button class="profile__edit-button_avatar"></button>
+                </div>
+            </div>
             <div class="profile__info">
-                <h1 class="profile__title">Jacques Cousteau</h1>
+                <h1 class="profile__title"></h1>
                 <button name="Edit" class="profile__edit-button"></button>
-                <p class="profile__subtitle">Explorer</p>
+                <p class="profile__subtitle"></p>
             </div>
             <button name="Add" class="profile__add-button"></button>
         </section>
@@ -27,15 +32,39 @@
         <footer class="footer">
             <p class="footer__copyright">&copy; 2020 Around The U.S.</p>
         </footer>
+
+        <section class="popup popup__type_delete-card">
+            <div class="popup__container">
+                <button name="Close" class="popup__close-button"></button>
+                <form class="popup__form popup__form_type_delete-card" name="delete-card">
+                    <h3 class="popup__title popup__title_type_delete-card">Are you sure?</h3>
+                    <button name="Submit" class="popup__button popup__button_type_yes" type="submit"></button>
+                </form>
+            </div>
+        </section>
+
+        <section class="popup popup__type_edit-avatar">
+            <div class="popup__container">
+                <button name="Close" class="popup__close-button"></button>
+                <form class="popup__form popup__form_type_edit-avatar" name="edit-avatar">
+                    <h3 class="popup__title">Change profile picture</h3>
+                    <input id="avatar" class="popup__field popup__field_type_edit-avatar" type="url" value="Image URL" name="avatar" minlength="2" maxlength="40" required>
+                    <span id="avatar-url-error" class="popup__error"></span>
+
+                    <button name="Submit" class="popup__button" type="submit"></button>
+                </form>
+            </div>
+        </section>
+
         <section class="popup popup__type_edit-profile">
             <div class="popup__container">
                 <button name="Close" class="popup__close-button"></button>
                 <form class="popup__form" name="edit-profile">
                     <h3 class="popup__title">Edit profile</h3>
-                    <input id="profile-name" class="popup__field popup__field_type_full-name" type="text" value="Full Name" minlength="2" maxlength="40" required>
+                    <input id="profile-name" class="popup__field popup__field_type_full-name" type="text" value="Full Name" name="fullName" minlength="2" maxlength="40" required>
                     <span id="profile-name-error" class="popup__error"></span>
 
-                    <input id="profile-about" class="popup__field popup__field_type_about-me" type="text" value="About Me" minlength="2" maxlength="200" required>
+                    <input id="profile-about" class="popup__field popup__field_type_about-me" type="text" value="About Me" name="aboutMe" minlength="2" maxlength="200" required>
                     <span id="profile-about-error" class="popup__error"></span>
 
                     <button name="Submit" class="popup__button" type="submit"></button>
@@ -74,7 +103,10 @@
                 <button name="Remove" class="element__remove-button"></button>
                 <div class="element__image" src="#" alt="#"></div>
                 <h2 class="element__title"></h2>
-                <button name="Like" class="element__like-button"></button>
+                <div class="element__likes-container">
+                    <button name="Like" class="element__like-button"></button>
+                    <p name="Number" class="element__likes-number"></p>
+                </div>
             </li>
         </template>
 </body>

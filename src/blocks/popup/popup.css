@@ -3,13 +3,17 @@
 @import url(./__close-button/popup__close-button.css);
 @import url(./__close-button/_image/popup__close-button_image.css);
 @import url(./__title/popup__title.css);
+@import url(./__title/_type_delete-card/popup__title_type_delete-card.css);
 @import url(./__field/popup__field.css);
 @import url(./__field/_type/popup__field_type.css);
 @import url(./__form/popup__form.css);
+@import url(./__form/_type_delete-card/popup__form_type_delete-card.css);
+@import url(./__form/_type_edit-avatar/popup__form_type_edit-avatar.css);
 @import url(./__figure/popup__figure.css);
 @import url(./__image/popup__image.css);
 @import url(./__caption/popup__caption.css);
 @import url(./__button/popup__button.css);
+@import url(./__button/_type_yes/popup__button_type_yes.css);
 @import url(./__button/_disabled/popup__button_disabled.css);
 @import url(./__error/popup__error.css);
 @import url(./__error/_visible/popup__error_visible.css);

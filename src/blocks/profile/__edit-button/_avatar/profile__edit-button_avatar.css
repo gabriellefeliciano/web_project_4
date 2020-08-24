@@ -1,0 +1,17 @@
+.profile__edit-button_avatar {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-image: url(../../../../images/editpencil_hover.png);
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+}
+
+.profile__edit-button_avatar:hover {
+    cursor: pointer;
+}
