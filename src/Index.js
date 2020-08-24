@@ -43,11 +43,13 @@ addCardValidation.enableValidation();
 editAvatarValidation.enableValidation();
 
 //Profile Variables
-const profileAvatar = document.querySelector('.profile__avatar');
+const profileAvatar = document.querySelector('.avatar');
 const editAvatarButton = document.querySelector('.profile__edit-button_avatar');
 const profileName = document.querySelector('.profile__title');
 const profileAbout = document.querySelector('.profile__subtitle');
 const editProfileButton = document.querySelector('.profile__edit-button');
+const formSaving = document.querySelector('.popup__button_saving');
+
 const profile = new UserInfo({profileName, profileAbout});
 
 api.getUserInfo()
@@ -71,10 +73,9 @@ editAvatarButton.addEventListener('click', () => {
 })
 
 //Editing Profile Description
-function submitEditProfileForm(profileName, profileAbout) {
-    profile.setUserInfo(profileName, profileAbout);
-    api.setUserInfo(profileName, profileAbout)
-    // .then(button.className = 'popup__button saving-button');
+function submitEditProfileForm({fullName, aboutMe}) {
+    profile.setUserInfo(fullName, aboutMe);
+    api.setUserInfo(fullName, aboutMe)
 };
 
 const newProfilePopup = new PopupWithForm(editProfilePopupSelector, submitEditProfileForm);
@@ -110,8 +111,11 @@ api.getUserInfo()
 
                     function submitDeleteCardForm() {
                         //console.log(res);
-                        api.removeCard(res._id)
+                        //renderLoading(true);
+                        api.removeCard(newDeleteCardPopup._cardID)
                         card.deleteCard();
+                        //renderLoading(false);
+                        newDeleteCardPopup.close();
                     }
 
                     const newDeleteCardPopup = new PopupWithForm(deleteCardPopupSelector, submitDeleteCardForm);
@@ -144,9 +148,12 @@ api.getUserInfo()
                 cardList.renderItems();
 
                 function submitCardForm (data) {
+                    renderLoading(true);
                     api.addCard(data)
                     .then(res => {
                         renderCard(res);
+                        renderLoading(false);
+                        newCard.close();
                     })
                 }
 
@@ -159,6 +166,14 @@ api.getUserInfo()
                 newCard.setEventListeners();
             });
 })
+
+function renderLoading(isLoading) {
+    if(isLoading) {
+        formSaving.textContent = "Saving...";
+    } else {
+        formSaving.textContent = formSaving.textContent.slice(0,-9);
+    }
+}
 
 // Image Popup
 /* const newImagePopup = new PopupWithImage(imagePopupSelector);

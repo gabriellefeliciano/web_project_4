@@ -1,6 +1,5 @@
 .popup__button_disabled {
-    background-image: url(../../../../images/submitbutton_disabled.png);
-    background-color: transparent;
+    opacity: 0.2;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     border-radius: 2px;

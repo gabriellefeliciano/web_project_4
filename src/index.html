@@ -38,7 +38,7 @@
                 <button name="Close" class="popup__close-button"></button>
                 <form class="popup__form popup__form_type_delete-card" name="delete-card">
                     <h3 class="popup__title popup__title_type_delete-card">Are you sure?</h3>
-                    <button name="Submit" class="popup__button popup__button_type_yes" type="submit"></button>
+                    <button name="Submit" class="popup__button popup__button_type_yes" type="submit">Yes</button>
                 </form>
             </div>
         </section>
@@ -48,10 +48,10 @@
                 <button name="Close" class="popup__close-button"></button>
                 <form class="popup__form popup__form_type_edit-avatar" name="edit-avatar">
                     <h3 class="popup__title">Change profile picture</h3>
-                    <input id="avatar" class="popup__field popup__field_type_edit-avatar" type="url" value="Image URL" name="avatar" minlength="2" maxlength="40" required>
+                    <input id="avatar-url" class="popup__field popup__field_type_edit-avatar" type="url" value="Image URL" name="avatar" minlength="2" maxlength="40" required>
                     <span id="avatar-url-error" class="popup__error"></span>
 
-                    <button name="Submit" class="popup__button" type="submit"></button>
+                    <button name="Submit" class="popup__button popup__button_saving" type="submit">Save</button>
                 </form>
             </div>
         </section>
@@ -67,7 +67,7 @@
                     <input id="profile-about" class="popup__field popup__field_type_about-me" type="text" value="About Me" name="aboutMe" minlength="2" maxlength="200" required>
                     <span id="profile-about-error" class="popup__error"></span>
 
-                    <button name="Submit" class="popup__button" type="submit"></button>
+                    <button name="Submit" class="popup__button popup__button_saving" type="submit">Save</button>
                 </form>
             </div>
         </section>
@@ -83,7 +83,7 @@
                 <input id="card-link" class="popup__field popup__field_type_image-link" type="url" placeholder="Image URL" name="link" required>
                 <span id="card-link-error" class="popup__error"></span>
 
-                <button name="Submit" class="popup__button" type="submit"></button>
+                <button name="Submit" class="popup__button popup__button_saving" type="submit">Create</button>
               </form>
             </div>
         </section>
