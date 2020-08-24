@@ -6,13 +6,14 @@
     margin: 18px auto 36.51px;
     padding: 0;
     border: 1px transparent;
+    background-image: url(../../../images/submitbutton_regular.png);
     background-color: black;
-    color: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 2px;
     align-self: center;
+    color: rgb(161, 148, 148);
 }
 
 .popup__button:hover {
