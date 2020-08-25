@@ -99,22 +99,16 @@ const deleteCardPopupSelector = document.querySelector('.popup__type_delete-card
 
 api.getUserInfo()
     .then(res => {
-        //console.log(res);
         const userID = res._id;
         api.getCardList()
             .then(res => {
-                //console.log(res);
                 const renderCard = (res) => {
                     const newImagePopup = new PopupWithImage(imagePopupSelector);
                     newImagePopup.setEventListeners();
 
                     function submitDeleteCardForm() {
-                        //console.log(res);
-                        //renderLoading(true);
                         api.removeCard(newDeleteCardPopup._cardID)
                         card.deleteCard();
-                        //renderLoading(false);
-                        newDeleteCardPopup.close();
                     }
 
                     const newDeleteCardPopup = new PopupWithForm(deleteCardPopupSelector, submitDeleteCardForm);
@@ -150,7 +144,6 @@ api.getUserInfo()
                     api.addCard(data)
                     .then(res => {
                         renderCard(res);
-                        newCard.close();
                     })
                 }
 

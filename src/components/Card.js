@@ -62,15 +62,6 @@ export default class Card {
         }
     };
 
-    /*_handleEscPopup(evt) {
-        evt.preventDefault();
-
-        if (evt.which = 27) {
-            this._card.classList.remove('popup_opened');
-            document.removeEventListener('keyup', this._handleEscPopup);
-        }
-    } */
-
     createCard() {
         const element = this._getCardTemplate();
         this._card = element;

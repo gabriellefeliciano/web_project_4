@@ -42,6 +42,7 @@ export default class PopupWithForm extends Popup {
             evt.preventDefault();
             this._popupElement.querySelector('.popup__button').className = "popup__button popup__saving-button";
             this._submitForm(this._getInputValues());
+            this.close();
         });
         super.setEventListeners();
     }
