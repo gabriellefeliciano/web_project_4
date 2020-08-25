@@ -99,7 +99,6 @@ const deleteCardPopupSelector = document.querySelector('.popup__type_delete-card
 
 api.getUserInfo()
     .then(res => {
-        console.log(res);
         const userID = res._id;
         api.getCardList()
             .then(res => {
