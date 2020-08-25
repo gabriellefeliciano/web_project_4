@@ -53,7 +53,6 @@ const profile = new UserInfo({profileName, profileAbout});
 
 api.getUserInfo()
     .then(res => {
-        console.log(res);
       profileAvatar.src = res.avatar;  
       profile.setUserInfo(res.name, res.about)
     })
