@@ -10,7 +10,7 @@ export default class Section {
     }
     
     /* clear() {
-        this._container.innerHTML = "";
+        this._container.innerHTML = '';
     } */
     
     renderItems() {

@@ -1,38 +1,38 @@
-import FormValidator from "./components/FormValidator.js";
-import Card from "./components/Card.js";
-import Section from "./components/Section.js";
-import PopupWithImage from "./components/PopupWithImage.js";
-import PopupWithForm from "./components/PopupWithForm.js";
-import UserInfo from "./components/UserInfo.js";
-import API from "./components/API.js";
-import "./styles/index.css";
+import FormValidator from './components/FormValidator.js';
+import Card from './components/Card.js';
+import Section from './components/Section.js';
+import PopupWithImage from './components/PopupWithImage.js';
+import PopupWithForm from './components/PopupWithForm.js';
+import UserInfo from './components/UserInfo.js';
+import API from './components/API.js';
+import './styles/index.css';
 
 //API
 
 const api = new API({
-    baseUrl: "https://around.nomoreparties.co/v1/group-3",
+    baseUrl: 'https://around.nomoreparties.co/v1/group-3',
     headers: {
-      authorization: "00dd05f0-5ab4-404d-8531-81f50ae2518e",
-      "Content-Type": "application/json"
+      authorization: '00dd05f0-5ab4-404d-8531-81f50ae2518e',
+      'Content-Type': 'application/json'
     }
 });
 
 //Form Validation
 const defaultConfig = {
-    inputSelector: ".popup__field",
-    submitButtonSelector: ".popup__button",
-    inactiveButtonClass: "popup__button_disabled",
-    inputErrorClass: "popup__field_type_error",
-    errorClass: "popup__error_visible"
+    inputSelector: '.popup__field',
+    submitButtonSelector: '.popup__button',
+    inactiveButtonClass: 'popup__button_disabled',
+    inputErrorClass: 'popup__field_type_error',
+    errorClass: 'popup__error_visible'
 };
 
 const editAvatarPopupSelector = document.querySelector('.popup__type_edit-avatar');
 const addCardPopupSelector = document.querySelector('.popup__type_add-card');
 const editProfilePopupSelector = document.querySelector('.popup__type_edit-profile');
 
-const editAvatarForm = editAvatarPopupSelector.querySelector(".popup__form");
-const editProfileForm = editProfilePopupSelector.querySelector(".popup__form");
-const addCardForm = addCardPopupSelector.querySelector(".popup__form");
+const editAvatarForm = editAvatarPopupSelector.querySelector('.popup__form');
+const editProfileForm = editProfilePopupSelector.querySelector('.popup__form');
+const addCardForm = addCardPopupSelector.querySelector('.popup__form');
 
 const editProfileValidation = new FormValidator(defaultConfig, editProfileForm);
 const addCardValidation = new FormValidator(defaultConfig, addCardForm);
@@ -79,7 +79,7 @@ function submitEditProfileForm({fullName, aboutMe}) {
 
 const newProfilePopup = new PopupWithForm(editProfilePopupSelector, submitEditProfileForm);
 
-editProfileButton.addEventListener("click", () => {
+editProfileButton.addEventListener('click', () => {
     newProfilePopup.open();
     
     const user = profile.getUserInfo();
@@ -227,28 +227,28 @@ const handleRemoveCardLike = (cardID) => {
 
 /* const initialCards = [
     {
-        name: "Yosemite Valley",
-        link: "https://code.s3.yandex.net/web-code/yosemite.jpg"
+        name: 'Yosemite Valley',
+        link: 'https://code.s3.yandex.net/web-code/yosemite.jpg'
     },
     {
-        name: "Lake Louise",
-        link: "https://code.s3.yandex.net/web-code/lake-louise.jpg"
+        name: 'Lake Louise',
+        link: 'https://code.s3.yandex.net/web-code/lake-louise.jpg'
     },
     {
-        name: "Bald Mountains",
-        link: "https://code.s3.yandex.net/web-code/bald-mountains.jpg"
+        name: 'Bald Mountains',
+        link: 'https://code.s3.yandex.net/web-code/bald-mountains.jpg'
     },
     {
-        name: "Latemar",
-        link: "https://code.s3.yandex.net/web-code/latemar.jpg"
+        name: 'Latemar',
+        link: 'https://code.s3.yandex.net/web-code/latemar.jpg'
     },
     {
-        name: "Vanois National Park",
-        link: "https://code.s3.yandex.net/web-code/vanois.jpg"
+        name: 'Vanois National Park',
+        link: 'https://code.s3.yandex.net/web-code/vanois.jpg'
     },
     {
-        name: "Lago di Braies",
-        link: "https://code.s3.yandex.net/web-code/lago.jpg"
+        name: 'Lago di Braies',
+        link: 'https://code.s3.yandex.net/web-code/lago.jpg'
     }
 ]; */
 

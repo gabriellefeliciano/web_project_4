@@ -17,7 +17,7 @@ export default class API {
     setUserInfo(name, about) {
       return fetch(this._baseUrl + '/users/me', {
         headers: this._headers,
-        method: "PATCH",
+        method: 'PATCH',
         body: JSON.stringify({
           name,
           about
@@ -31,7 +31,7 @@ export default class API {
     setUserAvatar(avatar) {
       return fetch(this._baseUrl + '/users/me/avatar', {
         headers: this._headers,
-        method: "PATCH",
+        method: 'PATCH',
         body: JSON.stringify({
           avatar
         })
@@ -53,7 +53,7 @@ export default class API {
     addCard({name, link}) {
       return fetch(this._baseUrl + '/cards', {
         headers: this._headers,
-        method: "POST",
+        method: 'POST',
         body: JSON.stringify({
           name,
           link
@@ -67,7 +67,7 @@ export default class API {
     removeCard(_id) {
       return fetch(this._baseUrl + '/cards/' + _id, {
         headers: this._headers,
-        method: "DELETE"
+        method: 'DELETE'
       })
       .then(res => res.ok ? res.json() : Promise.reject(`Something went wrong: ${res.status}`))
       .catch(err => console.log(err))
@@ -78,7 +78,7 @@ export default class API {
     addCardLike(_id) {
       return fetch(this._baseUrl + '/cards/likes/' + _id, {
         headers: this._headers,
-        method: "PUT"
+        method: 'PUT'
       })
       .then(res => res.ok ? res.json() : Promise.reject(res.status + ' Error: ' + res.statusText))
       .catch(err => console.log(err))
@@ -87,7 +87,7 @@ export default class API {
     removeCardLike(_id) {
       return fetch(this._baseUrl + '/cards/likes/' + _id, {
         headers: this._headers,
-        method: "DELETE"
+        method: 'DELETE'
       })
       .then(res => res.ok ? res.json() : Promise.reject(res.status + ' Error: ' + res.statusText))
       .catch(err => console.log(err))
@@ -95,9 +95,9 @@ export default class API {
   }
   
   /* const api = new Api({
-    baseUrl: "https://around.nomoreparties.co/v1/group-3",
+    baseUrl: 'https://around.nomoreparties.co/v1/group-3',
     headers: {
-      authorization: "00dd05f0-5ab4-404d-8531-81f50ae2518e",
-      "Content-Type": "application/json"
+      authorization: '00dd05f0-5ab4-404d-8531-81f50ae2518e',
+      'Content-Type': 'application/json'
     }
   }); */
